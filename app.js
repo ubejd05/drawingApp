@@ -33,10 +33,10 @@ function draw(e) {
   ctx.lineCap = 'round';
   ctx.strokeStyle = color;
 
-  ctx.lineTo(e.clientX, e.clientY);
+  ctx.lineTo(e.clientX - 50, e.clientY - 20);
   ctx.stroke();
   ctx.beginPath();
-  ctx.moveTo(e.clientX, e.clientY);
+  ctx.moveTo(e.clientX - 50, e.clientY - 20);
 } 
 
 
