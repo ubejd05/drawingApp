@@ -9,7 +9,7 @@ const ctx = canvas.getContext('2d');
 
 //Resize canvas to full screen
 canvas.width = window.innerWidth - 50;
-canvas.height = window.innerHeight - 300;
+canvas.height = window.innerHeight - 200;
 
 let painting = false;
 let brushSize = rangeInput.value;
