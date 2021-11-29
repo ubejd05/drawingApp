@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #canvas {
