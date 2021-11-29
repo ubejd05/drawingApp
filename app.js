@@ -3,12 +3,13 @@ const rangeInput = document.querySelector('#brush-size');
 const colorInput = document.querySelector('#color');
 const saveBtn = document.querySelector('#save');
 const colorBtns = document.querySelectorAll('.color');
+const eraser = document.querySelector('.eraser');
 
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 
 //Resize canvas to full screen
-canvas.width = window.innerWidth - 50;
+canvas.width = window.innerWidth - 100;
 canvas.height = window.innerHeight - 200;
 
 let painting = false;
@@ -24,8 +25,6 @@ function finishedPosition() {
   painting = false;
   ctx.beginPath();
 }
-
-// set line color 
 
 
 function draw(e) {
@@ -50,7 +49,7 @@ canvas.addEventListener('mousemove', draw);
 
 
 window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth - 50;
+  canvas.width = window.innerWidth - 100;
   canvas.height = window.innerHeight - 200;
 })
 
@@ -81,4 +80,8 @@ colorBtns.forEach(btn => {
     color = e.target.dataset.color;
     console.log(e.target.dataset.color);
   })
+})
+
+eraser.addEventListener('click', (e) => {
+  color = '#fafafa';
 })
