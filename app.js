@@ -8,7 +8,7 @@ const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
 
 //Resize canvas to full screen
-canvas.width = window.innerWidth - 30;
+canvas.width = window.innerWidth - 50;
 canvas.height = window.innerHeight - 300;
 
 let painting = false;
@@ -50,7 +50,7 @@ canvas.addEventListener('mousemove', draw);
 
 
 window.addEventListener('resize', () => {
-  canvas.width = window.innerWidth - 20;
+  canvas.width = window.innerWidth - 50;
   canvas.height = window.innerHeight - 200;
 })
 
